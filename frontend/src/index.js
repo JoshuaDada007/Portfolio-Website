@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     },
 
     {
-        path: "https://joshcodes-eight.vercel.app",
+        path: "/",
         element: <Login />,
         errorElement: <NotFound />
     },
