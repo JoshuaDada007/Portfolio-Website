@@ -5,7 +5,7 @@ export function NavButton(){
         window.location.href = "http://localhost:3000/dashboard"
     }
     function skillsCLick() {
-        window.location.href = "http://localhost:3000/skills"
+        window.location.href = "http://localhost:3000/skill"
     }
 
     function contactsClick() {
@@ -13,7 +13,7 @@ export function NavButton(){
     }
 
     function projectsClick() {
-        window.location.href = "http://localhost:3000/projects"
+        window.location.href = "http://localhost:3000/project"
     }
 
 

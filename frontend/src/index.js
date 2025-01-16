@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <Dashboard />,
     },
     {
-        path: "https://joshcodes-eight.vercel.app/contacts",
+        path: "https://joshcodes-eight.vercel.app/contact",
         element: <Contact />,
     },
 
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
         errorElement: <NotFound />
     },
     {
-        path: "https://joshcodes-eight.vercel.app/projects",
+        path: "https://joshcodes-eight.vercel.app/project",
         element: <Project />
     },
     {
-        path: "https://joshcodes-eight.vercel.app/skills",
+        path: "https://joshcodes-eight.vercel.app/skill",
         element: <Skills />
     }
 ]);
