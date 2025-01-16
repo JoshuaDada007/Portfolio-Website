@@ -22,10 +22,10 @@ export function Header() {
                 <a href="/dashboard"><img className="header-logo" src={logo} alt="pom-logo"/></a>
                 <nav className="nav">
                 <ul className="nav-list">
-                        <li><a href="/dashboard" className="nav-item">Home</a></li>
-                        <li><a href="/skills" className="nav-item">Skills</a></li>
-                        <li><a href="/projects" className="nav-item">Project</a></li>
-                        <li><a href="/contact" className="nav-item">Contact</a></li>
+                        <li><a href="https://joshcodes-eight.vercel.app/dashboard" className="nav-item">Home</a></li>
+                        <li><a href="https://joshcodes-eight.vercel.app/skill" className="nav-item">Skills</a></li>
+                        <li><a href="https://joshcodes-eight.vercel.app/project" className="nav-item">Project</a></li>
+                        <li><a href="/https://joshcodes-eight.vercel.app/contact" className="nav-item">Contact</a></li>
                     </ul>
                 </nav>
             </header>
