@@ -11,7 +11,7 @@ import {Contact} from "./components/pages/Contact";
 
 const router = createBrowserRouter([
     {
-        path: "/dashboard",
+        path: "https://joshcodes-eight.vercel.app/dashboard",
         element: <Dashboard />,
     },
     {
@@ -20,16 +20,16 @@ const router = createBrowserRouter([
     },
 
     {
-        path: '/',
+        path: "https://joshcodes-eight.vercel.app",
         element: <Login />,
         errorElement: <NotFound />
     },
     {
-        path: '/projects',
+        path: "https://joshcodes-eight.vercel.app/projects",
         element: <Project />
     },
     {
-        path: '/skills',
+        path: "https://joshcodes-eight.vercel.app/skills",
         element: <Skills />
     }
 ]);
