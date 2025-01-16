@@ -17,17 +17,18 @@ public class SecurityConfig {
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-
-                .authorizeHttpRequests(auth ->{
+                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
+                .authorizeHttpRequests(auth -> {
                     auth.anyRequest().authenticated();
                 })
-                .csrf(csrf ->csrf.disable())
+                .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-                .oauth2Login(oauth ->{
+                .oauth2Login(oauth -> {
                     oauth.defaultSuccessUrl("https://joshcodes-eight.vercel.app/dashboard", true);
                 })
                 .build();
     }
+
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
