@@ -2,18 +2,18 @@ import '../../styles/dashboard.css'
 
 export function NavButton(){
     function homeClick() {
-        window.location.href = "http://localhost:3000/dashboard"
+        window.location.href = "/dashboard"
     }
     function skillsCLick() {
-        window.location.href = "http://localhost:3000/skill"
+        window.location.href = "/skill"
     }
 
     function contactsClick() {
-        window.location.href = "http://localhost:3000/contact"
+        window.location.href = "/contact"
     }
 
     function projectsClick() {
-        window.location.href = "http://localhost:3000/project"
+        window.location.href = "/project"
     }
 
 
