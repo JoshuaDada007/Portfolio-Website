@@ -46,8 +46,6 @@ event.currentTarget.reset();
         <>
             <div className="contact-container">
                 <Header/>
-
-
                 <form  onSubmit={handleClick} ref = {reference}  className="form-container">
                     <h1 style={{fontSize: "2.3rem", padding: "0", margin: "0"}} align="center">Get in touch</h1>
                     <h4 align="center">Need more information, contact me</h4>
@@ -62,7 +60,6 @@ event.currentTarget.reset();
                     <textarea rows="4" cols="50" name="message" required></textarea>
 
                     <input type="checkbox" name="botcheck" className="hidden" style={{display: "none"}}/>
-
 
                     <button type="submit">Submit Form</button>
 
