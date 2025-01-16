@@ -14,21 +14,24 @@ export function Header() {
             if (headerRef.current) {
                 headerRef.current.classList.remove("page-transition");
             }
-        };    }, []);
+        };
+    }, []);
 
-    return(
+    return (
         <>
-            <header ref = {headerRef} className="header">
+            <header ref={headerRef} className="header">
                 <a href="/dashboard"><img className="header-logo" src={logo} alt="pom-logo"/></a>
                 <nav className="nav">
-                <ul className="nav-list">
+                    <ul className="nav-list">
                         <li><a href="/dashboard" className="nav-item">Home</a></li>
                         <li><a href="/skill" className="nav-item">Skills</a></li>
                         <li><a href="/project" className="nav-item">Project</a></li>
                         <li><a href="/contact" className="nav-item">Contact</a></li>
+                        <li><a href="/skill" className="nav-item">Skills</a></li>
+
                     </ul>
                 </nav>
             </header>
-            </>
+        </>
     )
 }
