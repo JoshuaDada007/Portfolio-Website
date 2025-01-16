@@ -11,11 +11,6 @@ import {Contact} from "./components/pages/Contact";
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <NotFound />,
-        errorElement: <NotFound />,
-    },
-    {
         path: "https://joshcodes-eight.vercel.app/dashboard",
         element: <Dashboard />,
     },
