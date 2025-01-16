@@ -1,0 +1,138 @@
+
+
+/* Status Messages */
+.status {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.status.win {
+    background-color: #28a745;
+    border: 2px solid #1f7a33;
+}
+
+.status.lose {
+    background-color: #dc3545;
+    border: 2px solid #a71d2a;
+}
+
+.status h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.status p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Languages Section */
+.languages {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    /*border: 1px solid black;*/
+}
+
+.language {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    color: #333;
+    transition: opacity 0.3s;
+}
+
+.language.faded {
+    opacity: 0.3;
+}
+
+/* Word Section */
+.word {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*border: 1px solid black;*/
+}
+
+.letter {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.green {
+    background-color: #28a745;
+    color: white;
+    border-color: #1f7a33;
+}
+
+.button.red {
+    background-color: #dc3545;
+    color: white;
+    border-color: #a71d2a;
+}
+
+.button:disabled {
+    background-color: #f1f1f1;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* New Game Button */
+.new-game-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-game-button:hover {
+    background-color: #0056b3;
+}
