@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <Project />
     },
     {
-        path: "https://joshcodes-eight.vercel.app/skill",
+        path: "/skill",
         element: <Skills />
     }
 ]);
