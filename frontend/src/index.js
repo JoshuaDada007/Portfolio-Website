@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <Dashboard />,
     },
     {
-        path: "/contact",
+        path: "https://joshcodes-eight.vercel.app/contacts",
         element: <Contact />,
     },
 
