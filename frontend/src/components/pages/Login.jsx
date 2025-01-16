@@ -35,7 +35,7 @@ export function Login() {
     }
 
     function guestLogin() {
-        window.location.href = "https://joshcodes-eight.vercel.app/dashboard"
+        window.location.href = "/dashboard"
     }
 
     return (
