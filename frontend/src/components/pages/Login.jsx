@@ -1,12 +1,9 @@
 import {FaSquareGithub} from "react-icons/fa6";
 import {FcGoogle} from "react-icons/fc";
-import {BsLinkedin} from "react-icons/bs";
-import {BsTwitterX} from "react-icons/bs";
 import '../../styles/login.css'
 import ProfilePicc from "../../assets/images/ProfilePic.jpg"
 import {useRef, useEffect} from "react";
 import {App} from "../showcase/App"
-import axios from "axios";
 
 export function Login() {
     const reference = useRef(null)
@@ -43,7 +40,6 @@ export function Login() {
 
     return (
         <>
-            {/*<Dashboard />*/}
             <div className="container">
                 <section className="loginContainer">
 
