@@ -1,6 +1,5 @@
-# Use an official OpenJDK runtime as the base image
-FROM openjdk:17-jdk-slim
-
+# syntax=docker/dockerfile:1.4
+FROM --platform=linux/amd64 openjdk:17-jdk-slim
 # Set the working directory
 WORKDIR /app
 
