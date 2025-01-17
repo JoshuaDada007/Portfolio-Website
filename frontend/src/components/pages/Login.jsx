@@ -27,11 +27,11 @@ export function Login() {
 
 
     function gitLogin() {
-        window.location.href = "http://localhost:8080/oauth2/authorization/github"
+        window.location.href = "https://josh-codes-958139021427.us-central1.run.app/oauth2/authorization/github"
     }
 
     function googleLogin() {
-        window.location.href = "http://localhost:8080/oauth2/authorization/google"
+        window.location.href = "https://josh-codes-958139021427.us-central1.run.app/oauth2/authorization/google"
     }
 
     function guestLogin() {

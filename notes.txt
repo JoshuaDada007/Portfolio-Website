@@ -1,0 +1,5 @@
+Deployment Notes for Google Cloud
+
+1) Make sure you have Docker installed on your local computer
+2) Create a Dockerfile in the root of your container
+3) Run your gradle using ./gradlew build to create a Jar file for your application

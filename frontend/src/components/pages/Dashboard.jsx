@@ -39,7 +39,7 @@ export function Dashboard() {
         async function fetchData() {
             try {
                 // API request to get user data, if logged in
-                const response = await axios.get("http://localhost:8443/userInfo", {withCredentials: true});
+                const response = await axios.get("https://josh-codes-958139021427.us-central1.run.app/userInfo", {withCredentials: true});
                 console.log("User data fetched:", response.data);
 
                 // If the user is authenticated, set user data in state
