@@ -27,7 +27,6 @@ export function Header() {
                         <li><a href="/skill" className="nav-item">Skills</a></li>
                         <li><a href="/project" className="nav-item">Project</a></li>
                         <li><a href="/contact" className="nav-item">Contact</a></li>
-                        <li><a href="/skill" className="nav-item">Skills</a></li>
 
                     </ul>
                 </nav>
