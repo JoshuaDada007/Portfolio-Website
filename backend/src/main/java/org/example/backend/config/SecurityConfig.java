@@ -23,8 +23,9 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .oauth2Login(oauth -> {
-                    oauth.defaultSuccessUrl("https://joshcodes-eight.vercel.app/dashboard", true);
+                    oauth.defaultSuccessUrl("https://joshua-codes-958139021427.us-central1.run.app/dashboard", true);
                 })
+                .formLogin(form -> form.disable()) // Disable default login form
                 .build();
     }
 
@@ -32,7 +33,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         // Adjust if you need specific origins instead of allowing all
-        config.setAllowedOrigins(Collections.singletonList("https://joshcodes-eight.vercel.app"));
+        config.setAllowedOrigins(Collections.singletonList("https://joshua-codes-958139021427.us-central1.run.app"));
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowedHeaders(Collections.singletonList("*"));
         config.setAllowCredentials(true);
