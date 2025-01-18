@@ -1,5 +1,24 @@
-Deployment Notes for Google Cloud
+Deployment Notes for Google Cloud in backend
 
 1) Make sure you have Docker installed on your local computer
 2) Create a Dockerfile in the root of your container
 3) Run your gradle using ./gradlew build to create a Jar file for your application
+
+
+
+
+Deployment Notes for Google Cloud in frontend
+
+Make sure you have gcloud installed on your machine in order to link the google account your project is in
+Once installed, authorize the account by doing "gcloud auth login" - This allows you to link your google account to the project
+Also make sure on your Google Cloud Platform you have created your project because you have to link it to gcloud like this
+
+"gcloud config set project <projectName>"
+
+docker build -t us-central1-docker.pkg.dev/josh-portfolio-446311/josh-codes/frontend .
+docker push us-central1-docker.pkg.dev/josh-portfolio-446311/josh-codes/frontend
+
+josh-portfolio-446311 is your GCP project
+josh-codes is your artifact name
+ frontend is the path your docker image will be pushed to
+
