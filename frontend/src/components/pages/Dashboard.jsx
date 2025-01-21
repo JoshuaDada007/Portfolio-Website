@@ -49,14 +49,14 @@ export function Dashboard() {
                         Full-Stack
                         developer,</h1>
                     <div className="paragraph">
-                        <p style={{width: "100%", paddingBottom: "5px", fontSize: "0.8rem"}}>
+                        <h1 style={{width: "100%", paddingBottom: "5px", fontSize: "0.92rem", marginTop: "50px"}}>
                             passionate about designing and building innovative web applications that deliver seamless
                             user experiences. With a solid foundation in both front-end and back-end technologies, I
                             excel at tackling complex challenges and crafting efficient, user-focused solutions. My
                             journey in software development is driven by curiosity, continuous learning, and a
                             commitment to staying at the forefront of technology. I thrive in collaborative
                             environments, contributing to meaningful projects while constantly evolving as a developer.
-                        </p>
+                        </h1>
                     </div>
                 </div>
                 <NavButton/>
