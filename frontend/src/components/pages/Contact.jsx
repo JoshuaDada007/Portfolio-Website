@@ -61,7 +61,7 @@ event.currentTarget.reset();
 
                     <input type="checkbox" name="botcheck" className="hidden" style={{display: "none"}}/>
 
-                    <button type="submit">Submit Form</button>
+                    <button type="submit">Send Message</button>
                 </form>
                 <NavButton/>
 
