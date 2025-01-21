@@ -1,6 +1,5 @@
 import '../../styles/dashboard.css'
-import {useEffect, useRef, useState} from "react";
-import axios from "axios";
+import {useEffect, useRef} from "react";
 import '../../styles/animation.css'
 import {Header} from "../layout/Header";
 import {NavButton} from "../layout/NavButton";
@@ -35,15 +34,11 @@ export function Dashboard() {
     }, []);
 
 
-    console.log(`authenticated ? ${isAuthenticated}!`);
-    console.log(user)
-    console.log(JSON.stringify(user));
-
 
     return (
         <>
             <div className="dashboard-container">
-                <div style={{
+                { isAuthenticated && <div style={{
                     width: '100%',
                     height: "40px",
                     display: "flex",
@@ -51,15 +46,17 @@ export function Dashboard() {
                     alignItems: "center",
 
                 }}>
-                    { <button style={{
+                    <button style={{
                         border: "none",
                         padding: "10px",
                         margin: "0",
                         color: "inherit",
                         backgroundColor: "#403d39",
                         font: "inherit",
-                        cursor: "pointer"}} onClick={() => logout()}>logout</button>
-                    }                </div>
+                        cursor: "pointer"
+                    }} onClick={() => logout()}>logout
+                    </button>
+                </div>}
                 <Header/>
                 <h3> Hi, {isAuthenticated ? user.name : isLoading ? "" : "Guest"}</h3>
                 <div ref={aboutRef} className="intro">
@@ -81,8 +78,6 @@ export function Dashboard() {
                     </div>
                 </div>
                 <NavButton/>
-
-
             </div>
 
         </>
