@@ -1,50 +1,46 @@
 # Portfolio Website
 
-## Description
+**Description**
+
 This is my personal portfolio website showcasing my skills, projects, and experiences. The application demonstrates proficiency in modern web development technologies and user authentication.
 
-## Tech Stack
-- **Frontend**: React.js
-- **Authentication**: Auth0
-- **Deployment**: Google Cloud Run
-- **Containerization**: Docker
+**Tech Stack**
 
-## Features
-- Responsive design
-- Authentication using Auth0
-- Dynamic content showcasing projects and skills
-- Guest login option for restricted access
+* **Frontend:** React.js
+* **Authentication:** Auth0
+* **Deployment:** Google Cloud Run
+* **Containerization:** Docker
 
-## How to Run Locally
+**Features**
 
-### Prerequisites
-- Node.js and npm installed
-- Docker installed (optional for containerized setup)
+* Responsive design
+* Authentication using Auth0
+* Dynamic content showcasing projects and skills
+* Guest login option for restricted access
 
-### Steps
-1. Clone the repository:
-    git clone https://github.com/JoshuaDada007/Portfolio-Website.git
+**How to Run Locally**
 
-2.	Navigate to the project directory:
-    cd frontend
+**Prerequisites**
 
-3.  Install dependencies
-    npm install
+* Node.js and npm installed
+* Docker installed (optional for containerized setup)
 
-4.	Start the development server:
+**Steps**
 
-  Note: While running locally, you will only be able to log in as a guest due to the authorization URL being set to the deployed site URL.
+1. Clone the repository: `git clone https://github.com/JoshuaDada007/Portfolio-Website.git`
+2. Navigate to the project directory: `cd frontend`
+3. Install dependencies: `npm install`
+4. Start the development server: 
+   * **Note:** While running locally, you will only be able to log in as a guest due to the authorization URL being set to the deployed site URL.
 
-
-  Deployment
+**Deployment**
 
 The application is deployed on Google Cloud Run. It uses a Dockerized container for seamless deployment and scalability.
 
-Author
+**Author**
 
 Joshua Dada
 
-License
+**License**
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
