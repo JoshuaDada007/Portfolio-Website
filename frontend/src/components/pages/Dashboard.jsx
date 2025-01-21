@@ -8,7 +8,7 @@ import {useAuth0} from "@auth0/auth0-react";
 export function Dashboard() {
     const aboutRef = useRef(null);
     const sweRef = useRef(null);
-    const {isAuthenticated, user, isLoading, logout} = useAuth0();
+    const {isAuthenticated, user, isLoading} = useAuth0();
 
     useEffect(() => {
 
@@ -38,25 +38,7 @@ export function Dashboard() {
     return (
         <>
             <div className="dashboard-container">
-                { isAuthenticated && <div style={{
-                    width: '100%',
-                    height: "40px",
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    alignItems: "center",
 
-                }}>
-                    <button style={{
-                        border: "none",
-                        padding: "10px",
-                        margin: "0",
-                        color: "inherit",
-                        backgroundColor: "#403d39",
-                        font: "inherit",
-                        cursor: "pointer"
-                    }} onClick={() => logout()}>logout
-                    </button>
-                </div>}
                 <Header/>
                 <h3> Hi, {isAuthenticated ? user.name : isLoading ? "" : "Guest"}</h3>
                 <div ref={aboutRef} className="intro">
