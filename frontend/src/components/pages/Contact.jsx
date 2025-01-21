@@ -10,11 +10,6 @@ import axios from 'axios';
 
 export function Contact() {
     const reference = useRef(null)
-    const [count, setCount] = useState(0)
-
-    function likeCount(){
-        setCount(count => count + 1)
-    }
     useEffect(() => {
         if (reference.current) {
             reference.current.classList.add("scale-in-center")

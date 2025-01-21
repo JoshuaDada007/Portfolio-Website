@@ -1,22 +1,23 @@
-import { FaGithub} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 import {useRef, useEffect} from "react";
 
 
 export function ProjectsHelper(props) {
     const reference = useRef(null)
     useEffect(() => {
-        if(reference.current){
+        if (reference.current) {
             reference.current.classList.add("scale-in-center")
         }
         return () => {
-            if(reference.current){
+            if (reference.current) {
                 reference.current.classList.remove("scale-in-center")
             }
         }
     }, [])
 
     return (
-        <section ref = {reference} style={{width: "100%", height: "100%", display: "flex", justifyContent: "center"}} className="project">
+        <section ref={reference} style={{width: "100%", height: "100%", display: "flex", justifyContent: "center"}}
+                 className="project">
             <div style={{
                 width: "70%",
                 height: "100%",
@@ -26,7 +27,7 @@ export function ProjectsHelper(props) {
                 justifyContent: "center"
             }} className="each-project">
                 <img style={{width: "200px", height: "200px", borderRadius: "10%"}} src={props.img} alt=""/>
-                <h1 style = {{textAlign: "center"}}>{props.name}</h1>
+                <h1 style={{textAlign: "center"}}>{props.name}</h1>
                 <div style={{
                     minWidth: "300px",
                     width: "80%",

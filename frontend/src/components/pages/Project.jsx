@@ -1,4 +1,3 @@
-import {useRef, useEffect} from "react";
 import '../../styles/animation.css'
 import {Header} from "../layout/Header";
 import {NavButton} from "../layout/NavButton";
