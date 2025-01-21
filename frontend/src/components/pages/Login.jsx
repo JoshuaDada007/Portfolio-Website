@@ -1,38 +1,30 @@
-import {FaSquareGithub} from "react-icons/fa6";
-import {FcGoogle} from "react-icons/fc";
 import '../../styles/login.css'
 import ProfilePicc from "../../assets/images/ProfilePic.jpg"
 import {useRef, useEffect} from "react";
 import {App} from "../showcase/App"
+import {useAuth0} from "@auth0/auth0-react";
 
 export function Login() {
     const reference = useRef(null)
     const headerRef = useRef(null)
+    const {loginWithRedirect} = useAuth0();
     useEffect(() => {
-        if(reference.current) {
+        if (reference.current) {
             reference.current.classList.add("tracking-in-expand")
-            if(headerRef.current) {
+            if (headerRef.current) {
                 headerRef.current.classList.add("typing")
             }
         }
         return () => {
-            if(reference.current) {
+            if (reference.current) {
                 reference.current.classList.remove("tracking-in-expand")
-                if(headerRef.current) {
+                if (headerRef.current) {
                     headerRef.current.classList.remove("typing")
                 }
             }
         }
     }, [])
 
-
-    function gitLogin() {
-        window.location.href = "https://josh-codes-958139021427.us-central1.run.app/oauth2/authorization/github"
-    }
-
-    function googleLogin() {
-        window.location.href = "https://josh-codes-958139021427.us-central1.run.app/oauth2/authorization/google"
-    }
 
     function guestLogin() {
         window.location.href = "/dashboard"
@@ -44,7 +36,8 @@ export function Login() {
                 <section className="loginContainer">
 
                     <div className="sign-in-container">
-                        <h1 ref={reference} align="center"  style={{ width: "100%", fontSize: "2.8rem", padding: 0, margin: 0}} > Welcome</h1>
+                        <h1 ref={reference} align="center"
+                            style={{width: "100%", fontSize: "2.8rem", padding: 0, margin: 0}}> Welcome</h1>
                         <p align="center">Sign in to view my portfolio</p>
                         <img style={{width: "150px", height: "150px", borderRadius: "50%"}} src={ProfilePicc}
                              alt="profilePicc"/>
@@ -57,22 +50,21 @@ export function Login() {
                             flexDirection: "column",
                             alignItems: "center"
                         }}>
-                            <button onClick={gitLogin} className="login-button">
-                                <FaSquareGithub size={23}/> Sign In with Github
+                            <button onClick={() => loginWithRedirect()} className="login-button">
+                                Sign in
                             </button>
-                            <button onClick={googleLogin} className="login-button">
-                                <FcGoogle size={23}/> Sign In with Google
-                            </button>
+
                             <h1>OR</h1>
-                            <button onClick={guestLogin}>Continue as guest</button>
+                            <button className = "login-button" onClick={guestLogin}>Continue as guest</button>
                         </div>
 
                     </div>
 
                 </section>
                 <section className="projectContainer">
-                    <div className = "sample-project" >
-                        <h3 ref={headerRef} style={{ width: "100%", fontSize: "1.8rem", padding: 0, margin: 0}} align="center">Explore Projects</h3>
+                    <div className="sample-project">
+                        <h3 ref={headerRef} style={{width: "100%", fontSize: "1.8rem", padding: 0, margin: 0}}
+                            align="center">Explore Projects</h3>
                         <App/>
 
                     </div>

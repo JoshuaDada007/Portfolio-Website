@@ -1,7 +1,7 @@
 import {Header} from "../layout/Header";
 import {NavButton} from "../layout/NavButton";
 import '../../styles/animation.css'
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {FaPhoneVolume} from "react-icons/fa6";
 import {SiGmail} from "react-icons/si";
 import {IoLogoLinkedin} from "react-icons/io";
@@ -10,6 +10,11 @@ import axios from 'axios';
 
 export function Contact() {
     const reference = useRef(null)
+    const [count, setCount] = useState(0)
+
+    function likeCount(){
+        setCount(count => count + 1)
+    }
     useEffect(() => {
         if (reference.current) {
             reference.current.classList.add("scale-in-center")
@@ -62,8 +67,6 @@ event.currentTarget.reset();
                     <input type="checkbox" name="botcheck" className="hidden" style={{display: "none"}}/>
 
                     <button type="submit">Submit Form</button>
-
-
                 </form>
                 <NavButton/>
 
