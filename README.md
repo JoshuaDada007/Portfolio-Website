@@ -40,7 +40,3 @@ The application is deployed on Google Cloud Run. It uses a Dockerized container 
 **Author**
 
 Joshua Dada 👋
-
-**License**
-
-This project is licensed under the MIT License - see the LICENSE file for details. 📜
