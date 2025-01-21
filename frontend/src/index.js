@@ -8,7 +8,10 @@ import { NotFound } from "./components/layout/NotFound";
 import { Project } from "./components/pages/Project";
 import {Skills} from "./components/pages/Skills";
 import {Contact} from "./components/pages/Contact";
+import {Auth0Provider} from "@auth0/auth0-react";
 
+const domain  = "dev-4bszcjfo13w0psad.us.auth0.com"
+const clientId = "ZtqqtRoMqLAo6pAuOiaUDcJNZVMGkiyC"
 const router = createBrowserRouter([
     {
         path: "/dashboard",
@@ -36,7 +39,16 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <RouterProvider router={router} />
+    <Auth0Provider
+        domain={domain}
+        clientId={clientId}
+        authorizationParams={{
+            redirect_uri: `${window.location.origin}/dashboard`,
+        }}
+    >
+        <RouterProvider router={router} />
+    </Auth0Provider>
+
 );
 
 reportWebVitals();
