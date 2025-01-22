@@ -10,8 +10,8 @@ import {Skills} from "./components/pages/Skills";
 import {Contact} from "./components/pages/Contact";
 import {Auth0Provider} from "@auth0/auth0-react";
 
-const domain  = "dev-4bszcjfo13w0psad.us.auth0.com"
-const clientId = "ZtqqtRoMqLAo6pAuOiaUDcJNZVMGkiyC"
+const domain  = process.env.REACT_APP_DOMAIN;
+const clientId = process.env.REACT_APP_CLIENT_ID;
 const router = createBrowserRouter([
     {
         path: "/dashboard",
